@@ -20,4 +20,12 @@ const worker = setupWorker(
   })
 );
 
-worker.start();
+if (process.env.NODE_ENV === 'production') {
+  worker.start({
+    serviceWorker: {
+      url: '/login-form/mockServiceWorker.js',
+    },
+  });
+} else {
+  worker.start();
+}
