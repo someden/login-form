@@ -1,0 +1,9 @@
+.feedback {
+  margin: 8px 0 0 16px;
+  font-size: 0.75em;
+  line-height: calc(16 / 12);
+}
+
+.error {
+  color: var(--error-color);
+}

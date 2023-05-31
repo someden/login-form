@@ -1,0 +1,29 @@
+.label {
+  display: block;
+  margin: 0 0 8px 16px;
+  line-height: 1;
+}
+.input {
+  --input-border-color: var(--border-color);
+  box-sizing: border-box;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  padding: 16px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.25;
+  appearance: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:hover {
+  --input-border-color: var(--primary-color);
+}
+
+.input:focus {
+  --input-border-color: var(--primary-color);
+  box-shadow: 0 0 4px var(--input-border-color);
+  outline: none;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 400px;
+  max-width: 100%;
+  padding: 24px;
+}
+
+.title {
+  margin: 0 0 32px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.input,
+.submit {
+  width: 100%;
+}
+
+.submit {
+  display: block;
+  margin-top: 40px;
+}

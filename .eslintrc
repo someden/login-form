@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "extends": ["airbnb", "airbnb/hooks", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": false, // rewrite airbnb
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest" // rewrite airbnb
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-plusplus": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  }
+}
